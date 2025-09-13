@@ -1,125 +1,113 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coach Bukky</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      margin: 0; 
-      padding: 0; 
-      background: #fafafa; 
-      color: #333; 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
     }
-    header { 
-      background: #1e3a8a; 
-      color: #fff; 
-      padding: 1rem; 
-      text-align: center; 
+    header {
+      background: #0a1a44; /* Dark Blue */
+      color: #fff;
+      padding: 15px;
+      text-align: center;
     }
-    nav ul { 
-      list-style: none; 
-      padding: 0; 
-      margin: 0; 
-      display: flex; 
-      justify-content: center; 
+    nav {
+      background: #142a5c; /* Slightly lighter dark blue */
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
       flex-wrap: wrap;
     }
-    nav li { 
-      margin: 0.5rem 1rem; 
+    nav li {
+      margin: 0;
     }
-    nav a { 
-      color: #fff; 
-      text-decoration: none; 
-      font-weight: bold; 
-      transition: color 0.3s ease; 
+    nav a {
+      display: block;
+      padding: 12px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav a:hover { color: #fbbf24; }
-    
-    .hero { 
-      display: flex; 
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center; 
-      padding: 3rem 1rem; 
-      background: linear-gradient(to right, #1e3a8a, #3b82f6); 
-      color: #fff; 
-      text-align: center; 
+    nav a:hover {
+      background: #1e3a8a;
     }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; max-width: 600px; }
-
-    .content { 
-      padding: 2rem; 
-      max-width: 1000px; 
-      margin: auto; 
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .content h2 { color: #1e3a8a; margin-bottom: 1rem; }
-
-    .gallery { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-      gap: 1rem; 
+    h2 {
+      margin-top: 0;
+      color: #0a1a44;
     }
-    .gallery img, 
-    .gallery video { 
-      width: 100%; 
-      border-radius: 10px; 
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
     }
-
-    footer { 
-      background: #1e3a8a; 
-      color: #fff; 
-      text-align: center; 
-      padding: 1rem; 
-      margin-top: 2rem; 
-      font-size: 0.9rem; 
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-
+    footer {
+      background: #0a1a44;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
     @media (max-width: 600px) {
-      .hero h1 { font-size: 1.8rem; }
-      nav ul { flex-direction: column; }
-      nav li { margin: 0.5rem 0; }
+      nav ul {
+        flex-direction: column;
+      }
+      nav a {
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Coach Bukky</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>👩‍🏫 Coach Bukky</h1>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Coach Bukky’s Gaming Hub</h1>
-    <p>Transforming lives through guidance, motivation, and strategy.</p>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#about">ℹ️ About</a></li>
+      <li><a href="#video">🎥 Video</a></li>
+      <li><a href="#gallery">🖼️ Gallery</a></li>
+      <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about" class="content">
-    <h2>About Coach Bukky</h2>
+  <section id="about">
+    <h2>ℹ️ About Coach Bukky</h2>
     <p>Coach Bukky is dedicated to helping individuals unlock their full potential. 
        With years of experience, personalized coaching, and motivational strategies, 
-       Coach Bukky ensures every client achieves lasting success.</p>
+       Coach Bukky ensures every client achieves lasting success. 🌟</p>
   </section>
 
-  <!-- 🔹 Video moved here, just below About -->
-  <section id="intro-video" class="content">
-    <h2>Introduction Video</h2>
+  <section id="video">
+    <h2>🎥 Introduction Video</h2>
     <video controls>
       <source src="WhatsApp Video 2025-09-13 at 11.57.45_66a3a757.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <section id="gallery" class="content">
-    <h2>Gallery</h2>
+  <section id="gallery">
+    <h2>🖼️ Gallery</h2>
     <div class="gallery">
       <img src="WhatsApp Image 2025-09-13 at 11.59.06_40a0cbbf.jpg" alt="Coaching Session">
       <img src="WhatsApp Image 2025-09-13 at 11.59.06_7629fbb5.jpg" alt="Coaching Session">
@@ -127,16 +115,14 @@
     </div>
   </section>
 
-  <section id="contact" class="content">
-    <h2>Contact Coach Bukky</h2>
-    <p>WhatsApp: <a href="https://chat.whatsapp.com/FgZ4kKjvo0e4Ycl6uaMO18">WhatsApp</a></p>
-    <p>Telegram: <a href="https://t.me/+oXlQcKuo8_o1YjJk">Telegram</a></p>
+  <section id="contact">
+    <h2>📞 Contact</h2>
+    <p>💬 WhatsApp: <a href="https://chat.whatsapp.com/FgZ4kKjvo0e4Ycl6uaMO18">Join WhatsApp Group</a></p>
+    <p>📢 Telegram: <a href="https://t.me/+oXlQcKuo8_o1YjJk">Join Telegram Channel</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Coach Bukky. All rights reserved.</p>
+    <p>&copy; 2025 👩‍🏫 Coach Bukky. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
-
-
